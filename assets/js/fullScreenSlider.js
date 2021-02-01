@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pauseOnHover: false,
         pagination: false,
         arrows: false,
-        fixedHeight: "100vh",
+        fixedHeight: "80vh",
         fixedWidth: "100vw",
         cover: true,
         interval: 3000,

@@ -13,17 +13,176 @@
         <title>Document</title>
     </head>
 
-    <body>
+    <body id="products_page">
+        <section class="mobile_nav">
+            <header class="light">
+                <a href="/"><img src="./assets/images/logo/logo dark.svg" alt="" class="logo" /></a>
+                <i data-feather="menu" class="menu_button" id="menu_button"></i>
+            </header>
+            <div class="sidebar" id="mobile_sidebar">
+                <header>
+                    <a href="/"><img src="./assets/images/logo/logo.svg" alt="" class="logo" /></a>
+                    <i data-feather="x" class="menu_button" id="menu_button"></i>
+                </header>
+                <div class="nav_links">
+                    <a href="/about.html">About Numarine</a>
+                    <a href="/products.html">Yachts</a>
+                    <a href="/news.html">News</a>
+                    <a href="/findus.html">Find us</a>
+                    <a href="/contact.html">Contact</a>
+                    <div class="social_media">
+                        <a href="#"><i data-feather="facebook"></i></a>
+                        <a href="#"><i data-feather="instagram"></i></a>
+                        <a href="#"><i data-feather="youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="web_nav">
-            <img src="./assets/images/logo/logo dark.svg" alt="numarine logo" class="logo" />
+            <a href="/"><img src="./assets/images/logo/logo dark.svg" alt="numarine logo" class="logo" /></a>
             <div class="nav_links dark">
                 <a href="/about.html">About</a>
                 <a href="/products.html">Yachts</a>
                 <a href="/news.html">News</a>
                 <a href="/findus.html">Find us</a>
+                <a href="/contact.html">Contact</a>
             </div>
         </section>
-        <h1>products pages</h1>
+        <section class="product_filters">
+            <header class="web">
+                <p class="selected">All Models</p>
+                <p>Hardtop</p>
+                <p>Flybridge</p>
+                <p>Explorer</p>
+            </header>
+            <header class="mobile">
+                <details>
+                    <!-- The summary Should reflect the selected category  -->
+                    <summary>All Models</summary>
+                    <!-- The summary Should reflect the selected category  -->
+                    <p class="selected">All Models</p>
+                    <p>Hardtop</p>
+                    <p>Flybridge</p>
+                    <p>Explorer</p>
+                </details>
+            </header>
+            <main>
+                <div class="title">2020 Motor Yacht range</div>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo maiores aliquam sed repellat mollitia pariatur cum commodi, vitae
+                    placeat iste delectus ad consectetur facilis labore! Sequi labore reprehenderit quibusdam quisquam quas vel aperiam, repellat
+                    nostrum? Cupiditate perspiciatis eum molestias vero iure optio beatae, ducimus nam similique ullam! Consectetur, nam quos.
+                </p>
+            </main>
+        </section>
+        <section class="product_listing">
+            <!-- <header class="section_header">
+                <div class="title">2020 Motor Yacht range</div>
+            </header> -->
+            <main>
+                <a href="#"
+                    ><div
+                        class="product"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
+                        "
+                    >
+                        <div class="overlay"></div>
+                        <div class="details">
+                            <p class="title">product title</p>
+                            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div></a
+                >
+                <a href="#"
+                    ><div
+                        class="product"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
+                        "
+                    >
+                        <div class="overlay"></div>
+                        <div class="details">
+                            <p class="title">product title</p>
+                            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div></a
+                >
+                <a href="#"
+                    ><div
+                        class="product"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
+                        "
+                    >
+                        <div class="overlay"></div>
+                        <div class="details">
+                            <p class="title">product title</p>
+                            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div></a
+                >
+                <a href="#"
+                    ><div
+                        class="product"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
+                        "
+                    >
+                        <div class="overlay"></div>
+                        <div class="details">
+                            <p class="title">product title</p>
+                            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div></a
+                >
+                <a href="#"
+                    ><div
+                        class="product"
+                        style="
+                            background-image: url(https://images.unsplash.com/photo-1528154291023-a6525fabe5b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=80);
+                        "
+                    >
+                        <div class="overlay"></div>
+                        <div class="details">
+                            <p class="title">product title</p>
+                            <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div></a
+                >
+            </main>
+        </section>
+        <section class="footer">
+            <header>
+                <a href="/">
+                    <img src="./assets/images/logo/logo dark.svg" alt="" class="logo" />
+                </a>
+            </header>
+            <div class="links">
+                <div class="link_group">
+                    <p class="title">Legal</p>
+                    <a href="">Terms and conditons</a>
+                    <a href="">Contact</a>
+                    <a href="">find a dealer</a>
+                    <a href="">after Sales point</a>
+                </div>
+                <div class="link_group">
+                    <p class="title">Numarine</p>
+                    <a href="">About </a>
+                    <a href="">Yachts</a>
+                    <a href="">News</a>
+                    <a href="">Find us</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="link_group">
+                    <p class="title">Legal</p>
+                    <a href="">Terms and conditons</a>
+                    <a href="">Contact</a>
+                    <a href="">find a dealer</a>
+                    <a href="">after Sales point</a>
+                </div>
+            </div>
+        </section>
         <script>
             feather.replace();
         </script>

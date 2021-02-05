@@ -5,6 +5,12 @@
     font-family: "poppins";
     margin: 0;
     padding: 0;
+    &:focus {
+        outline: none !important;
+        outline-style: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
 }
 
 /* Chrome, Safari, Edge, Opera */

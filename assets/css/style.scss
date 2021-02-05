@@ -46,6 +46,7 @@ $orange: #e6851d;
             background-color: $white;
             padding: 12px 40px;
             border-radius: 4px;
+            text-transform: uppercase;
             font-size: 12px;
             font-weight: 600;
             outline: none;
@@ -354,6 +355,8 @@ $orange: #e6851d;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
         padding: 24px 0;
+        outline: none;
+
         details {
             text-align: center;
             margin: auto;

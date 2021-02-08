@@ -526,10 +526,36 @@ $orange: #e6851d;
         font-weight: 400;
         margin-bottom: 8px;
     }
+
     .body {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 16px;
+    }
+    ul {
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        list-style-type: none;
+        padding-top: 24px;
+
+        li {
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 8px;
+            p {
+                margin-bottom: 8px;
+                font-weight: 800;
+                font-size: 12px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
     }
     @media (min-width: 768px) {
         header {
@@ -630,6 +656,35 @@ $orange: #e6851d;
     }
 }
 
+.lightbox {
+    padding: 16px;
+    max-width: 1200px;
+    margin: auto;
+    #lightgallery {
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        a {
+            div {
+                width: 100%;
+                padding-top: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        #lightgallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media (min-width: 992px) {
+        #lightgallery {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
 // =======
 // override
 // ========
@@ -682,5 +737,23 @@ header.section_header {
     margin-top: 88px;
     @media (min-width: 768px) {
         margin-top: 83px;
+    }
+}
+#product_details_page {
+    margin-top: 88px;
+    @media (min-width: 768px) {
+        margin-top: 83px;
+        .full_screen_banner {
+            div {
+                padding-top: 40%;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        .full_screen_banner {
+            div {
+                padding-top: 32%;
+            }
+        }
     }
 }

@@ -668,6 +668,43 @@
   margin-bottom: 16px;
 }
 
+.text_group ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 24px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  padding-top: 24px;
+}
+
+.text_group ul li {
+  text-decoration: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 8px;
+}
+
+.text_group ul li p {
+  margin-bottom: 8px;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.text_group ul li span {
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .text_group header .title {
     font-size: 24px;
@@ -798,6 +835,41 @@
   }
 }
 
+.lightbox {
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.lightbox #lightgallery {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 24px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.lightbox #lightgallery a div {
+  width: 100%;
+  padding-top: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .lightbox #lightgallery {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .lightbox #lightgallery {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 header.section_header {
   margin-bottom: 56px;
   text-align: center;
@@ -858,6 +930,25 @@ header.section_header .title {
 @media (min-width: 768px) {
   .location_page {
     margin-top: 83px;
+  }
+}
+
+#product_details_page {
+  margin-top: 88px;
+}
+
+@media (min-width: 768px) {
+  #product_details_page {
+    margin-top: 83px;
+  }
+  #product_details_page .full_screen_banner div {
+    padding-top: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #product_details_page .full_screen_banner div {
+    padding-top: 32%;
   }
 }
 /*# sourceMappingURL=style.css.map */

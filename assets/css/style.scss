@@ -526,11 +526,11 @@ $orange: #e6851d;
         font-weight: 400;
         margin-bottom: 8px;
     }
-
     .body {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 16px;
+        text-align: center;
     }
     ul {
         display: grid;
@@ -655,7 +655,6 @@ $orange: #e6851d;
         margin: auto;
     }
 }
-
 .lightbox {
     padding: 16px;
     max-width: 1200px;

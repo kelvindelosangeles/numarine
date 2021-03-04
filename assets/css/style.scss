@@ -766,6 +766,62 @@ $orange: #e6851d;
         }
     }
 }
+.numa_slider {
+    padding: 40px 16px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        "main"
+        "thumbs"
+        "details";
+
+    .main {
+        overflow: hidden;
+        margin-bottom: 16px;
+        grid-area: main;
+    }
+    .thumbs {
+        overflow: hidden;
+        margin-bottom: 40px;
+        grid-area: thumbs;
+        img {
+            cursor: pointer;
+        }
+    }
+    .details {
+        grid-area: details;
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            border-bottom: 1px solid black;
+        }
+        .description {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 28px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 40px;
+        grid-template-areas:
+            "main main details details"
+            "thumbs thumbs details details";
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+            "main main main details details"
+            "thumbs thumbs thumbs details details ";
+    }
+    // @media (min-width: 1440px) {
+    //     max-width: 80vw;
+    // }
+}
 
 // =======
 // override

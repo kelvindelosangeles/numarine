@@ -885,9 +885,8 @@
 }
 
 .product-grid-intro .details {
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: details;
 }
 
@@ -968,6 +967,72 @@
   .product-grid-intro .details .subtitle {
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+.numa_slider {
+  padding: 40px 16px;
+  max-width: 1200px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "main" "thumbs" "details";
+}
+
+.numa_slider .main {
+  overflow: hidden;
+  margin-bottom: 16px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+.numa_slider .thumbs {
+  overflow: hidden;
+  margin-bottom: 40px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: thumbs;
+}
+
+.numa_slider .thumbs img {
+  cursor: pointer;
+}
+
+.numa_slider .details {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: details;
+}
+
+.numa_slider .details .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+
+.numa_slider .details .description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+  .numa_slider {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+        grid-template-areas: "main main details details" "thumbs thumbs details details";
+  }
+}
+
+@media (min-width: 1200px) {
+  .numa_slider {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "main main main details details" "thumbs thumbs thumbs details details ";
   }
 }
 
